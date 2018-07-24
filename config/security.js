@@ -29,7 +29,7 @@ module.exports.security = {
 
   cors: {
     allRoutes: true,
-    allowOrigins: ["http://127.0.0.1:4200"]
+    allowOrigins: ["http://sadimahmud.com", "http://127.0.0.1:4200"]
   }
 
   /****************************************************************************
