@@ -43,13 +43,10 @@ module.exports = {
 
         if (!matched) return res.serverError("Invalid password.");
 
-        var token = jwt.sign(
-          JSON.parse(JSON.stringify(user)),
-          "this is my secret key",
-          {
-            expiresIn: "10m"
-          }
-        );
+        // secret to take in separate file
+        var token = jwt.sign(JSON.parse(JSON.stringify(user)), "KEYSECRET", {
+          expiresIn: "1d"
+        });
 
         //return the token here
         res.ok(token);

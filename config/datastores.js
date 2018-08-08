@@ -47,6 +47,7 @@ module.exports.datastores = {
      *                                                                          *
      ***************************************************************************/
     adapter: "sails-mysql",
-    url: process.env.DATABASE_STRING
+    url: process.env.DATABASE_STRING_LOCAL
+    //process.env.DATABASE_STRING
   }
 };

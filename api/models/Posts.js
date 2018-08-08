@@ -7,17 +7,24 @@
 
 module.exports = {
   attributes: {
-    title: { 
-      type: "string", 
-      required: true, 
-    },
-    body: { 
+    title: {
       type: "string",
-      columnType: "text", 
-      required: true,
+      required: true
+    },
+    body: {
+      type: "string",
+      columnType: "longtext",
+      required: true
+    },
+    category: {
+      type: "string",
+      required: true
+    },
+    thumbnail: {
+      type: "string"
     },
     owner: {
-      model: 'user'
+      model: "user"
     }
   }
 };

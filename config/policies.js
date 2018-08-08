@@ -11,14 +11,13 @@
 module.exports.policies = {
   "*": "isAuthenticated",
   UserController: {
-    login: true,
-    create: true
+    login: true
   },
   PostsController: {
-    find: true
+    find: true,
+    findOne: true
   },
   PortfolioController: {
-    find: true,
-    create: true
+    find: true
   }
 };

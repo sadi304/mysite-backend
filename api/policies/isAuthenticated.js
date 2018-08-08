@@ -12,7 +12,7 @@ module.exports = function(req, res, next) {
     }
 
     //verify if this token was from us or not
-    jwt.verify(bearerToken, "this is my secret key", function(err, decoded) {
+    jwt.verify(bearerToken, "KEYSECRET", function(err, decoded) {
       if (err) {
         sails.log("verification error", err);
         if (err.name === "TokenExpiredError")
