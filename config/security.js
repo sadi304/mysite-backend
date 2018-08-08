@@ -34,7 +34,8 @@ module.exports.security = {
       "http://sadimahmud.com",
       "http://127.0.0.1:4200",
       "http://localhost:4200"
-    ]
+    ],
+    allowRequestHeaders: "content-type, authorization"
   }
 
   /****************************************************************************
